@@ -1,2 +1,3 @@
-ls
-web: gunicorn p2plending.p2plending.wsgi --log-file -
+worker: ls
+worker: cd p2plending
+web: gunicorn p2plending.wsgi --log-file -
